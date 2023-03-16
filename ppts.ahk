@@ -3,7 +3,7 @@
 #NoTrayIcon
 #If isMainWindowActive()
 
-OnError("error")
+onError("error")
 OnExit("exit")
 
 refreshControlMessage() {
@@ -262,7 +262,7 @@ sendTelegramRequest(method, content := "") {
 	return response
 }
 
-global title := "streleckiy.ru - PowerPoint Telegram Server"
+global title := "vk.com/strdev - PowerPoint Telegram Server"
 global action := 0
 global mainwid
 global telegramToken
@@ -290,9 +290,9 @@ if (action == 0)
 return
 
 OpenDeveloperPage:
-MsgBox, 1, % title, Ссылка streleckiy.ru откроется в браузере по-умолчанию.
+MsgBox, 1, % title, Ссылка vk.com/strdev откроется в браузере по-умолчанию.
 IfMsgBox, Ok
-	Run, http://streleckiy.ru,, UseErrorLevel
+	Run, http://vk.com/strdev,, UseErrorLevel
 
 return
 
